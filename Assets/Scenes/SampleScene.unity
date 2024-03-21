@@ -849,9 +849,9 @@ MonoBehaviour:
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   resolution: 32
   function: 0
-  transitionMode: 0
+  transitionMode: 1
   functionDuration: 1
-  transitionDuration: 0
+  transitionDuration: 2
 --- !u!1 &1878774366
 GameObject:
   m_ObjectHideFlags: 0
