@@ -47,7 +47,7 @@ public static class FunctionLibrary {
         return p;
     }
 
-    public static Vector3 DistoredSphere(float u, float v, float t)
+    public static Vector3 DistortedSphere(float u, float v, float t)
     {
         Vector3 p;
         float r = 0.9f + 0.1f * Sin(PI * (6f * u + 4f * v + t));
@@ -91,16 +91,15 @@ public static class FunctionLibrary {
 
     //functions delegate, array, and  getter math functions
     public delegate Vector3 Function(float u, float v, float t);
-    public enum FunctionName {Wave, MultiWave, Ripple, Sphere, DistoredSphere, Torus , DistortedTorus }
-    static Function[] functions = {Wave, MultiWave, Ripple, Sphere, DistoredSphere, Torus, DistortedTorus };
+    public enum FunctionName {Wave, MultiWave, Ripple, Sphere, DistortedSphere, Torus , DistortedTorus }
+    static Function[] functions = {Wave, MultiWave, Ripple, Sphere, DistortedSphere, Torus, DistortedTorus };
 
-    public static Function GetFunction(FunctionName name) {
-        return functions[(int)name];
-    }
+    public static int FunctionCount => functions.Length;
 
-    public static FunctionName GetNextFunctionName(FunctionName name) {
-        return (int)name < functions.Length - 1 ? name + 1 : 0;
-    }
+    public static Function GetFunction(FunctionName name) => functions[(int)name];
+
+    public static FunctionName GetNextFunctionName(FunctionName name) => (int)name < functions.Length - 1 ? name + 1 : 0;
+    
 
     public static FunctionName GetRandomFunctionOther (FunctionName name) {
         var choice = (FunctionName)Random.Range(1, functions.Length);

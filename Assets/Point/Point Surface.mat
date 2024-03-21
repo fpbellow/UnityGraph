@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Point Surface (Material)
+  m_Name: Point Surface
   m_Shader: {fileID: 4800000, guid: 2ba48af5949acc548b92e3fde45c51c7, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
