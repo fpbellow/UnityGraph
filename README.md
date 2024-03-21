@@ -1,4 +1,4 @@
-Short project following along catlikecoding Unity tutorials.
+Short project following along catlikecoding Unity tutorials to delve into URP and configuring custom materials and shader graphs.
 
 I have included some additional features myself for switching between the different graphs and options within the inspector for viewing the mathematical functions.
 
