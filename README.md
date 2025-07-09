@@ -3,7 +3,7 @@ As well as experimenting with the tools available for debugging and optimizing p
 
 I have included some additional personal features for switching between the different graphs and options within the inspector for viewing the mathematical functions.
 
-In light of the stance from Unity Technologies in the past year, I have since turned my studies elsewhere though am keeping this code hosted here to show the fruits of my effort.
+In light of the stance from Unity Technologies in the recent years, I have since turned my studies elsewhere though am keeping this code hosted here to show the fruits of my effort.
 
 
 
